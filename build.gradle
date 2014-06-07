@@ -2,27 +2,21 @@ apply plugin: 'eclipse'
 apply plugin: 'java'
 apply plugin:'application'
 
-repositories {
-	mavenCentral()
-}
+repositories { mavenCentral() }
 
-configurations {
-	lenskiteval
-}
+configurations { lenskiteval }
 
 dependencies {
-	compile 'org.grouplens.lenskit:lenskit-all:2.1-M2'
+	compile 'org.grouplens.lenskit:lenskit-all:2.1-SNAPSHOT'
 
 	compile 'org.slf4j:slf4j-api:1.7.6'
 	runtime 'org.slf4j:slf4j-log4j12:1.7.6'
-    runtime 'log4j:log4j:1.2.14'
-	
+	runtime 'log4j:log4j:1.2.14'
+
 	compile 'commons-configuration:commons-configuration:1.10'
-	lenskiteval 'org.grouplens.lenskit:lenskit-eval:2.1-M2'
+	lenskiteval 'org.grouplens.lenskit:lenskit-eval:2.1-SNAPSHOT'
 }
 
-task wrapper(type: Wrapper) {
-	gradleVersion = '1.12'
-}
+task wrapper(type: Wrapper) { gradleVersion = '1.12' }
 
 mainClassName = "edu.umn.cs.vranjan.recsys.mf.app.MFFoldsCreator"
