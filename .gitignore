@@ -1,0 +1,11 @@
+.gradle
+.gradle/*
+gradle
+gradle/*
+user_artists_ratings.dat
+user_artists.dat
+.classpath
+.project
+.settings
+bin
+bin/*
