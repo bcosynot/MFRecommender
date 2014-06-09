@@ -7,3 +7,5 @@ user_artists.dat
 .settings
 bin
 bin/*
+build
+build/*
